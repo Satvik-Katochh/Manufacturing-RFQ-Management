@@ -1,0 +1,169 @@
+2022-09-08_19-50-10 [restartedMain] INFO  com.mfpe.plant.PlantApplication - Starting PlantApplication using Java 17.0.1 on Gunnie with PID 4372 (C:\Users\katoc\Downloads\mfpe v3.0\demo\target\classes started by katoc in C:\Users\katoc\Downloads\mfpe v3.0\demo)
+2022-09-08_19-50-10 [restartedMain] INFO  com.mfpe.plant.PlantApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.DemandRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.PartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.ReorderRulesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 JDBC repository interfaces.
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2022-09-08_19-50-10 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2022-09-08_19-50-10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-08_19-50-10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-08_19-50-10 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/plantapp] - Initializing Spring embedded WebApplicationContext
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1779 ms
+2022-09-08_19-50-10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-09-08_19-50-10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-09-08_19-50-10 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-08_19-50-10 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-08_19-50-10 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-08_19-50-10 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-08_19-50-10 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-09-08_19-50-10 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2022-09-08_19-50-10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/plantapp'
+2022-09-08_19-50-10 [restartedMain] INFO  com.mfpe.plant.PlantApplication - Started PlantApplication in 5.223 seconds (JVM running for 5.804)
+2022-09-08_19-58-22 [restartedMain] INFO  com.mfpe.plant.PlantApplication - Starting PlantApplication using Java 17.0.1 on Gunnie with PID 12776 (C:\Users\katoc\Downloads\mfpe v3.0\demo\target\classes started by katoc in C:\Users\katoc\Downloads\mfpe v3.0\demo)
+2022-09-08_19-58-22 [restartedMain] INFO  com.mfpe.plant.PlantApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.DemandRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.PartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.ReorderRulesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2022-09-08_19-58-22 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2022-09-08_19-58-22 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-08_19-58-22 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-08_19-58-22 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/plantapp] - Initializing Spring embedded WebApplicationContext
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1502 ms
+2022-09-08_19-58-22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-09-08_19-58-22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-09-08_19-58-22 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-08_19-58-22 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-08_19-58-22 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-08_19-58-22 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-08_19-58-22 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-09-08_19-58-22 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2022-09-08_19-58-22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/plantapp'
+2022-09-08_19-58-22 [restartedMain] INFO  com.mfpe.plant.PlantApplication - Started PlantApplication in 4.617 seconds (JVM running for 5.166)
+2022-09-08_19-58-22 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 17 class path changes (0 additions, 0 deletions, 17 modifications)
+2022-09-08_19-58-22 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2022-09-08_19-58-22 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-09-08_19-58-22 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2022-09-08_19-58-22 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8082"]
+2022-09-08_19-58-22 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-08_19-58-22 [Thread-5] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-08_19-58-22 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-09-08_19-58-22 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-09-08_20-11-31 [restartedMain] INFO  com.mfpe.plant.PlantApplication - Starting PlantApplication using Java 17.0.1 on Gunnie with PID 12776 (C:\Users\katoc\Downloads\mfpe v3.0\demo\target\classes started by katoc in C:\Users\katoc\Downloads\mfpe v3.0\demo)
+2022-09-08_20-11-31 [restartedMain] INFO  com.mfpe.plant.PlantApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.DemandRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.PartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.ReorderRulesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2022-09-08_20-11-31 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2022-09-08_20-11-31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-08_20-11-31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-08_20-11-31 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/plantapp] - Initializing Spring embedded WebApplicationContext
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 339 ms
+2022-09-08_20-11-31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2022-09-08_20-11-31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-09-08_20-11-31 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-08_20-11-31 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-08_20-11-31 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-09-08_20-11-31 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/plantapp'
+2022-09-08_20-11-31 [restartedMain] INFO  com.mfpe.plant.PlantApplication - Started PlantApplication in 0.839 seconds (JVM running for 790.093)
+2022-09-08_20-11-31 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-09-08_20-20-51 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 17 class path changes (0 additions, 0 deletions, 17 modifications)
+2022-09-08_20-20-51 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2022-09-08_20-20-51 [Thread-8] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-09-08_20-20-51 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2022-09-08_20-20-51 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8082"]
+2022-09-08_20-20-51 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-08_20-20-51 [Thread-8] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-08_20-20-51 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2022-09-08_20-20-51 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2022-09-08_20-20-53 [restartedMain] INFO  com.mfpe.plant.PlantApplication - Starting PlantApplication using Java 17.0.1 on Gunnie with PID 12776 (C:\Users\katoc\Downloads\mfpe v3.0\demo\target\classes started by katoc in C:\Users\katoc\Downloads\mfpe v3.0\demo)
+2022-09-08_20-20-53 [restartedMain] INFO  com.mfpe.plant.PlantApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.DemandRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.PartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mfpe.plant.repo.ReorderRulesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2022-09-08_20-20-53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2022-09-08_20-20-53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-08_20-20-53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-08_20-20-53 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/plantapp] - Initializing Spring embedded WebApplicationContext
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 319 ms
+2022-09-08_20-20-53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2022-09-08_20-20-53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-09-08_20-20-53 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-08_20-20-53 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-08_20-20-53 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-09-08_20-20-53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/plantapp'
+2022-09-08_20-20-53 [restartedMain] INFO  com.mfpe.plant.PlantApplication - Started PlantApplication in 0.669 seconds (JVM running for 1351.993)
+2022-09-08_20-20-53 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-09-08_20-20-53 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[.[localhost].[/plantapp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-08_20-20-53 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-08_20-20-53 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-09-08_20-20-53 [http-nio-8082-exec-1] INFO  c.m.plant.controller.PlantController - Inside ViewPartsReorder of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-1] INFO  com.mfpe.plant.service.PlantService - Inside viewPartsReorderof service
+2022-09-08_20-20-53 [http-nio-8082-exec-1] INFO  com.mfpe.plant.service.PlantService - [Part details:]
+2022-09-08_20-20-53 [http-nio-8082-exec-2] INFO  c.m.plant.controller.PlantController - Inside viewStockInHand of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-7] INFO  c.m.plant.controller.PlantController - Inside ViewPartsReorder of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-7] INFO  com.mfpe.plant.service.PlantService - Inside viewPartsReorderof service
+2022-09-08_20-20-53 [http-nio-8082-exec-7] INFO  com.mfpe.plant.service.PlantService - [Part details:]
+2022-09-08_20-20-53 [http-nio-8082-exec-8] INFO  c.m.plant.controller.PlantController - Inside ViewPartsReorder of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-8] INFO  com.mfpe.plant.service.PlantService - Inside viewPartsReorderof service
+2022-09-08_20-20-53 [http-nio-8082-exec-8] INFO  com.mfpe.plant.service.PlantService - [Part details:]
+2022-09-08_20-20-53 [http-nio-8082-exec-1] INFO  c.m.plant.controller.PlantController - Inside viewStockInHand of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-6] INFO  c.m.plant.controller.PlantController - Inside ViewPartsReorder of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-6] INFO  com.mfpe.plant.service.PlantService - Inside viewPartsReorderof service
+2022-09-08_20-20-53 [http-nio-8082-exec-6] INFO  com.mfpe.plant.service.PlantService - [Part details:]
+2022-09-08_20-20-53 [http-nio-8082-exec-7] INFO  c.m.plant.controller.PlantController - Inside viewStockInHand of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-8] INFO  c.m.plant.controller.PlantController - Inside ViewPartsReorder of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-8] INFO  com.mfpe.plant.service.PlantService - Inside viewPartsReorderof service
+2022-09-08_20-20-53 [http-nio-8082-exec-8] INFO  com.mfpe.plant.service.PlantService - [Part details:]
+2022-09-08_20-20-53 [http-nio-8082-exec-1] INFO  c.m.plant.controller.PlantController - Inside ViewPartsReorder of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-1] INFO  com.mfpe.plant.service.PlantService - Inside viewPartsReorderof service
+2022-09-08_20-20-53 [http-nio-8082-exec-1] INFO  com.mfpe.plant.service.PlantService - [Part details:]
+2022-09-08_20-20-53 [http-nio-8082-exec-10] INFO  c.m.plant.controller.PlantController - Inside viewStockInHand of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-3] INFO  c.m.plant.controller.PlantController - Inside ViewPartsReorder of PartController
+2022-09-08_20-20-53 [http-nio-8082-exec-3] INFO  com.mfpe.plant.service.PlantService - Inside viewPartsReorderof service
+2022-09-08_20-20-53 [http-nio-8082-exec-3] INFO  com.mfpe.plant.service.PlantService - [Part details:]
+2022-09-08_20-20-53 [http-nio-8082-exec-4] INFO  c.m.plant.controller.PlantController - Inside viewStockInHand of PartController

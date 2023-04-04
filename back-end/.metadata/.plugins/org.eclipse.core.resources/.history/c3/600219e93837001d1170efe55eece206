@@ -1,0 +1,6 @@
+package com.mfpe.plant.model;
+
+public class MessageResponse {
+	private String message;
+
+}

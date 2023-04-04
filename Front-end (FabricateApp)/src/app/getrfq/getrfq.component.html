@@ -1,0 +1,27 @@
+<h1 align="center">RFQ Details</h1>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>RFQ Id</th>
+                <th>Part Details</th>
+               
+                <th>Part Specification</th>
+                <th>Quantity</th>
+                <th>Time to Supply</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{rfqdetails.rfqId}}</td>
+                <td>{{rfqdetails.partName}}</td>
+                
+                <td>{{rfqdetails.specification}}</td>
+                <td>{{rfqdetails.quantity}}</td>
+                <td>{{rfqdetails.expectedSupplyDate}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <button type="button" class="btn btn-primary" routerLink="/rfq">Back</button>
+</div>

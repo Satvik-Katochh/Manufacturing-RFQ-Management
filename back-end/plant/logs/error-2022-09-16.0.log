@@ -1,0 +1,45 @@
+2022-09-16_11-49-37 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2022-09-16_11-51-31 [main] ERROR com.mfpe.plant.service.PlantService - PartId not found. Please provide valid partId to update min and max quantities
+2022-09-16_11-55-22 [main] ERROR com.mfpe.plant.service.PlantService - PartId not found. Please provide valid partId to update min and max quantities
+2022-09-16_11-55-31 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2022-09-16_12-07-24 [main] ERROR com.mfpe.plant.service.PlantService - PartId not found. Please provide valid partId to update min and max quantities
+2022-09-16_12-07-36 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+

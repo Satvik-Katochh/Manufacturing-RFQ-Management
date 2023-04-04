@@ -1,0 +1,52 @@
+2022-09-09_17-19-31 [restartedMain] INFO  com.mfpe.rfq.RfqApplication - Starting RfqApplication using Java 17.0.1 on Gunnie with PID 5056 (C:\Users\katoc\Downloads\LATEST MFPE\rfq\target\classes started by katoc in C:\Users\katoc\Downloads\LATEST MFPE\rfq)
+2022-09-09_17-19-31 [restartedMain] INFO  com.mfpe.rfq.RfqApplication - No active profile set, falling back to default profiles: default
+2022-09-09_17-19-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-09_17-19-31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2022-09-09_17-19-31 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c6919823-0124-3f49-a13d-860d42143112
+2022-09-09_17-19-31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-09-09_17-19-31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-09_17-19-31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-09-09_17-19-31 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/rfqapp] - Initializing Spring embedded WebApplicationContext
+2022-09-09_17-19-31 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 253 ms
+2022-09-09_17-19-31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2022-09-09_17-19-31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2022-09-09_17-19-31 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-09-09_17-19-31 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-09_17-19-31 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-09_17-19-31 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-09_17-19-31 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-09_17-19-31 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-09_17-19-31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path '/rfqapp'
+2022-09-09_17-19-31 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-09-09_17-19-31 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-09-09_17-19-31 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-09-09_17-19-31 [restartedMain] INFO  com.mfpe.rfq.RfqApplication - Started RfqApplication in 0.664 seconds (JVM running for 3770.941)
+2022-09-09_17-19-31 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-09-09_17-19-31 [Thread-38] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-09_17-19-31 [Thread-38] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-09_17-19-31 [Thread-38] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2022-09-09_17-19-31 [Thread-38] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2022-09-09_17-23-06 [restartedMain] INFO  com.mfpe.rfq.RfqApplication - Starting RfqApplication using Java 17.0.1 on Gunnie with PID 5056 (C:\Users\katoc\Downloads\LATEST MFPE\rfq\target\classes started by katoc in C:\Users\katoc\Downloads\LATEST MFPE\rfq)
+2022-09-09_17-23-06 [restartedMain] INFO  com.mfpe.rfq.RfqApplication - No active profile set, falling back to default profiles: default
+2022-09-09_17-23-06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-09_17-23-06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2022-09-09_17-23-06 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c6919823-0124-3f49-a13d-860d42143112
+2022-09-09_17-23-06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-09-09_17-23-06 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-09_17-23-06 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-09-09_17-23-06 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/rfqapp] - Initializing Spring embedded WebApplicationContext
+2022-09-09_17-23-06 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 244 ms
+2022-09-09_17-23-06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2022-09-09_17-23-06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2022-09-09_17-23-06 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-09-09_17-23-06 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-09_17-23-06 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-09_17-23-06 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-09_17-23-06 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-09_17-23-06 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-09_17-23-06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path '/rfqapp'
+2022-09-09_17-23-06 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-09-09_17-23-06 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-09-09_17-23-06 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-09-09_17-23-06 [restartedMain] INFO  com.mfpe.rfq.RfqApplication - Started RfqApplication in 0.629 seconds (JVM running for 3985.619)
+2022-09-09_17-23-06 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

@@ -1,0 +1,103 @@
+package com.mfpe.plant.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.NoSuchElementException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mfpe.plant.exception.PartNotFoundException;
+import com.mfpe.plant.model.Demand;
+import com.mfpe.plant.model.MessageResponse;
+import com.mfpe.plant.model.Part;
+import com.mfpe.plant.model.ReorderRules;
+import com.mfpe.plant.repo.DemandRepository;
+import com.mfpe.plant.repo.PartRepository;
+import com.mfpe.plant.repo.ReorderRulesRepository;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+public class PlantService {
+
+	@Autowired
+	private PartRepository partRepository;
+	/*
+	 * @Autowired private PlantReorderDetails plantReorderDetailsRepository;
+	 */
+
+	@Autowired
+	private ReorderRulesRepository reorderRulesRepository;
+
+	@Autowired
+	private DemandRepository demandRepository;
+
+	public List<Part> viewPartsReorder() {
+		log.info("Inside viewPartsReorderof service");
+
+		List<Part> partList = new ArrayList<>();
+		List<Demand> demandList = demandRepository.findAll();
+		for (Demand demand : demandList) {
+			Part part = partRepository.findById(demand.getPartId()).orElse(null);
+			ReorderRules rr = reorderRulesRepository.findById(demand.getPartId()).orElse(null);
+			if (part.getStockInHand() - demand.getDemandCount() <= rr.getMinQuantity()) {
+				partList.add(part);
+
+			}
+
+		}
+		log.info("[Part details:]");
+		return partList;
+	}
+
+	public Part viewStockInHand(int partId) throws PartNotFoundException {
+		log.info("Inside viewStockInHand of service");
+		Part part = partRepository.findById(partId).orElseThrow(() -> new PartNotFoundException("Part not found"));
+			log.info("[Stock details:]" + part);
+		return part;
+	}
+
+	public MessageResponse updateMinMaxQuantities(ReorderRules reorderRules) {
+		log.info("Inside updateMinMaxQuantities of service");
+		MessageResponse response = new MessageResponse();
+
+		try {
+			ReorderRules reorderRulesTemplate = reorderRulesRepository.findById(reorderRules.getPartId()).orElse(null);
+			if (reorderRulesTemplate != null) {
+				Demand demand = demandRepository.getByPartId(reorderRules.getPartId());
+				Integer minQuantity = reorderRules.getMinQuantity();
+				Integer maxQuantity = reorderRules.getMaxQuantity();
+				if (maxQuantity < (demand.getDemandCount() * 20) / 100)
+					reorderRulesTemplate.setMaxQuantity(reorderRules.getMaxQuantity());
+				else
+
+					return new MessageResponse("Maximum limit exceeding");
+
+				if (minQuantity > (maxQuantity * 30) / 100 && minQuantity < (maxQuantity * 50) / 100)
+					reorderRulesTemplate.setMinQuantity(reorderRules.getMinQuantity());
+				else
+					return new MessageResponse("Minimum limit receeding");
+
+				reorderRulesRepository.save(reorderRulesTemplate);
+				log.info("Updated");
+				response.setMessage("Updated");
+				return response;
+			} else {
+				log.error("PartId not found. Please provide valid partId to update min and max quantities");
+			
+				return new MessageResponse("PartId not found. Please provide valid partId to update min and max quantities");
+			}
+		} catch (NoSuchElementException e) {
+
+			return new MessageResponse("PartId not found. Please provide valid partId to update min and max quantities");
+		}
+	}
+
+	public int viewDemand(int partId) {
+		// TODO Auto-generated method stub
+		Demand demand=demandRepository.getByPartId(partId);
+		return demand.getDemandCount();
+	}
+
+}

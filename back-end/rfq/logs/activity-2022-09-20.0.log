@@ -1,0 +1,32 @@
+2022-09-20_17-18-23 [restartedMain] INFO  com.mfpe.rfq.RfqApplication - Starting RfqApplication using Java 18.0.1.1 on DESKTOP-VT00VGQ with PID 2872 (C:\Users\HP\OneDrive\Documents\.cognizant\MFPE\testing mfpe\rfq\target\classes started by HP in C:\Users\HP\OneDrive\Documents\.cognizant\MFPE\testing mfpe\rfq)
+2022-09-20_17-18-23 [restartedMain] INFO  com.mfpe.rfq.RfqApplication - No active profile set, falling back to default profiles: default
+2022-09-20_17-18-23 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-20_17-18-23 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-20_17-18-23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-20_17-18-23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2022-09-20_17-18-23 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c6919823-0124-3f49-a13d-860d42143112
+2022-09-20_17-18-23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-09-20_17-18-23 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-09-20_17-18-23 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-20_17-18-23 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-09-20_17-18-23 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/rfqapp] - Initializing Spring embedded WebApplicationContext
+2022-09-20_17-18-23 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2198 ms
+2022-09-20_17-18-23 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-09-20_17-18-23 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-09-20_17-18-23 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-09-20_17-18-23 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-20_17-18-23 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-09-20_17-18-23 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-20_17-18-23 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-20_17-18-23 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-20_17-18-23 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-20_17-18-23 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-20_17-18-23 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2022-09-20_17-18-23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path '/rfqapp'
+2022-09-20_17-18-23 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-09-20_17-18-23 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-09-20_17-18-23 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-09-20_17-18-23 [restartedMain] INFO  com.mfpe.rfq.RfqApplication - Started RfqApplication in 5.252 seconds (JVM running for 5.913)
+2022-09-20_17-18-23 [http-nio-8084-exec-1] INFO  o.a.c.c.C.[.[localhost].[/rfqapp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-20_17-18-23 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-20_17-18-23 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms

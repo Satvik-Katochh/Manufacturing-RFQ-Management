@@ -1,0 +1,125 @@
+package com.mfpe.plant.controller;
+
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyInt;
+import static org.mockito.Mockito.when;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mfpe.plant.model.Part;
+import com.mfpe.plant.model.ReorderRules;
+import com.mfpe.plant.service.PlantService;
+
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+@SpringBootTest
+@AutoConfigureMockMvc
+class PlantControllerTest {
+    @InjectMocks
+    private PlantController plantController;
+
+    @Mock
+    private PlantService plantService;
+
+    /**
+     * Method under test: {@link PlantController#viewPartsReorder()}
+     */
+    @Test
+    void testViewPartsReorder() throws Exception {
+        when(plantService.viewPartsReorder()).thenReturn(new ArrayList<>());
+        MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.get("/viewpartsreorder");
+        MockMvcBuilders.standaloneSetup(plantController)
+                .build()
+                .perform(requestBuilder)
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.content().contentType("application/json"))
+                .andExpect(MockMvcResultMatchers.content().string("[]"));
+    }
+
+    /**
+     * Method under test: {@link PlantController#viewStockInHand(int)}
+     */
+    @Test
+    void testViewStockInHand() throws Exception {
+        Part part = new Part();
+        part.setPartDescription("Part Description");
+        part.setPartId(123);
+        part.setPartSpecification("Part Specification");
+        part.setStockInHand(1);
+        when(plantService.viewStockInHand(anyInt())).thenReturn(part);
+        MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.get("/viewstockinhand/{partId}", 123);
+        MockMvcBuilders.standaloneSetup(plantController)
+                .build()
+                .perform(requestBuilder)
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.content().contentType("application/json"))
+                .andExpect(MockMvcResultMatchers.content()
+                        .string(
+                                "{\"partId\":123,\"partDescription\":\"Part Description\",\"partSpecification\":\"Part Specification\",\"stockInHand"
+                                        + "\":1}"));
+    }
+
+    /**
+     * Method under test: {@link PlantController#viewDemand(int)}
+     */
+    @Test
+    void testViewDemand() throws Exception {
+        when(plantService.viewDemand(anyInt())).thenReturn(1);
+        MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.get("/viewdemand/{partId}", 123);
+        MockMvcBuilders.standaloneSetup(plantController)
+                .build()
+                .perform(requestBuilder)
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.content().contentType("application/json"))
+                .andExpect(MockMvcResultMatchers.content().string("1"));
+    }
+
+    /**
+     * Method under test: {@link PlantController#healthCheck()}
+     */
+    @Test
+    void testHealthCheck() throws Exception {
+        MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.get("/health-check");
+        MockMvcBuilders.standaloneSetup(plantController)
+                .build()
+                .perform(requestBuilder)
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.content().contentType("text/plain;charset=ISO-8859-1"))
+                .andExpect(MockMvcResultMatchers.content().string("Ok"));
+    }
+
+    /**
+     * Method under test: {@link PlantController#updateMinMaxQuantities(ReorderRules)}
+     */
+    @Test
+    void testUpdateMinMaxQuantities() throws Exception {
+        when(plantService.updateMinMaxQuantities(any())).Return("2020-03-01");
+
+        ReorderRules reorderRules = new ReorderRules();
+        reorderRules.setMaxQuantity(3);
+        reorderRules.setMinQuantity(1);
+        reorderRules.setPartId(123);
+        String content = (new ObjectMapper()).writeValueAsString(reorderRules);
+        MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.post("/updateminmaxquantity")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(content);
+        MockMvcBuilders.standaloneSetup(plantController)
+                .build()
+                .perform(requestBuilder)
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.content().contentType("text/plain;charset=ISO-8859-1"))
+                .andExpect(MockMvcResultMatchers.content().string("2020-03-01"));
+    }
+
+}
+
